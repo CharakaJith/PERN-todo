@@ -17,15 +17,16 @@ const logger = createLogger({
     ]
 })
 
-const app = express()
+const app = express()                   // create an express app
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000   // create a port
 
-app.use(cors())
+app.use(cors())                         // grants permission for cross origins
 app.use(express.json());                // grants permission to access request body
 
-app.use("/todo", todoRouter)              
+app.use("/todo", todoRouter)            // set up the routing path
 
+// set up the port
 app.listen(PORT, () => {
     //logger.info("server started on " + PORT)
     //logger.info("server started on $1", [PORT])

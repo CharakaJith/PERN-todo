@@ -62,7 +62,7 @@ exports.getTodoById = async(req, res) => {
     }
 }
 
-// endpoint update a todo in the system
+// endpoint to update a todo in the system
 exports.updateTodo = async(req, res) => {
     try {
         const { id } = req.params
@@ -80,6 +80,7 @@ exports.updateTodo = async(req, res) => {
     }
 }
 
+// endpoint to delete a todo in the system
 exports.deleteTodo = async(req, res) => {
     try {
         const { id } = req.params
