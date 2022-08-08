@@ -16,7 +16,7 @@ Watch this course on youtube: [PERN Stack Course - Postgres, Express, React, and
   </li>
   <li>Start the client
     <ul>
-      <li>cd to server</li>
+      <li>cd to client</li>
       <li>run "npm start"</li>
     </ul>
   </li>
