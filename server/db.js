@@ -3,7 +3,7 @@ const Pool = require("pg").Pool     // create an instance of PostgreSQL client
 // create new pool 
 const pool = new Pool({
     user: "postgres",
-    password: "Sandun1972?",
+    password: "newpassword",
     database: "pern_todo",
     host: "localhost",
     port: 5432
