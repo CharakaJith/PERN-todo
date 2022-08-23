@@ -1,4 +1,4 @@
-const pool = require("../db")                                           // create an instance from the file db.js
+const pool = require("../conn")                                           // create an instance from the file db.js
 const { createLogger, format, transports } = require("winston")         // create an instance of Winston logger module
 
 // create a logger
