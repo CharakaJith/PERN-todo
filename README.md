@@ -6,18 +6,27 @@
 This project is from the course "PERN Stack Course - Postgres, Express, React, and Node" by freeCodeCamp.org.<br/>
 Watch this course on youtube: [PERN Stack Course - Postgres, Express, React, and Node](https://www.youtube.com/watch?v=ldYcgPKEZC8&t=4293s)
 
-#### To run this project,
-<ul>
-  <li>Start the server
-    <ul>
-      <li>cd to server</li>
-      <li>run "npm start"</li>
-    </ul>
-  </li>
-  <li>Start the client
-    <ul>
-      <li>cd to client</li>
-      <li>run "npm start"</li>
-    </ul>
-  </li>
-</ul>
+## Getting started
+```
+git clone https://github.com/CharakaJith/PERN-todo.git
+cd PERN-todo/server
+npm start
+cd ../client
+npm start
+```
+
+## Setting up database connection
+Create a ``` conn.js ``` file in the server folder with the following content:
+```
+const Pool = require("pg").Pool
+
+const pool = new Pool({
+    user: <USER_NAME>,
+    password: <USER_PASSWORD>,
+    database: <DATABASE_NAME,
+    host: <DATABASE_IP>,
+    port: <DATABASE_PORT>
+})
+
+module.exports = pool
+```
